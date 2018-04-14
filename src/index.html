@@ -5,9 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Webdev Challenge #01</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>Hello world!</p>
+    <div class="container">
+      <div id="header">
+        <img src="img/logo-top.png" class="header__image" alt="masterlab">
+      </div>
+      <div id="content">
+        <div class="col">
+          <h2>Register Form</h2>
+          <div class="frame">
+            <div class="form">
+              <form action="#">
+                <label>
+                  <span class="form__span form__span--username"></span>
+                  <input type="text" class="form__input" name="username" placeholder="Username" required>
+                </label>
+                <label>
+                  <span class="form__span form__span--password"></span>
+                  <input type="password" class="form__input" name="password" placeholder="Password"required>
+                </label>
+                <label>
+                  <span class="form__span form__span--password"></span>
+                  <input type="password" class="form__input" name="confirm-password" placeholder="Confirm Password" required>
+                </label>
+                <label>
+                  <span class="form__span form__span--email"></span>
+                  <input type="email" class="form__input" name="email" placeholder="Email" required>
+                </label>
+                <label>
+                  <span class="form__span form__span--location"></span>
+                  <input list="browser" class="form__input" name="location" placeholder="Location" required>
+                </label>
+                <label class="form__label--checkbox">
+                  <input type="checkbox" class="form__input--checkbox" name="rules" required><span class="form__span--checkbox"></span> I have read and accept the term of use.
+                </label>
+                <input type="submit" class="form__button form__button--success" value="Sign up">
+              </form>
+            </div>
+          </div>
+
+          <h2>Send Email</h2>
+          <div class="frame">
+            <div class="form">
+              <form action="#">
+                <label>
+                  <span class="form__span form__span--username"></span>
+                  <input type="text" class="form__input" name="username" placeholder="Your Name" required>
+                </label>
+                <label>
+                  <span class="form__span form__span--email"></span>
+                  <input type="email" class="form__input" name="email" placeholder="Your Email" required>
+                </label>
+                <textarea class="form__textarea" name="message" rows="10" placeholder="Type your message ..."></textarea>
+                <label class="form__label--checkbox">
+                  <input type="checkbox" class="form__input--checkbox" name="copy"><span class="form__span--checkbox"></span> Send a copy to my Email
+                </label>
+                <input type="submit" class="form__button form__button--success" value="Send Email">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h2>Sign In Form</h2>
+          <div class="frame">
+            <div class="form">
+              <form action="#">
+                <label>
+                  <span class="form__span form__span--username"></span>
+                  <input type="text" class="form__input" name="username" placeholder="Username" required>
+                </label>
+                <label>
+                  <span class="form__span form__span--password"></span>
+                  <input type="password" class="form__input" name="password" placeholder="Password" required>
+                </label>
+                <div class="flex">
+                  <label class="form__label--checkbox">
+                     <input type="checkbox" class="form__input--checkbox" name="remember"><span class="form__span--checkbox"></span> Remember me
+                  </label>
+                  <input type="submit" class="form__button form__button--small form__button--success" value="Sign in">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <h2>Recover Form</h2>
+          <div class="frame">
+            <div class="form">
+              <form action="#">
+                <label>
+                  <span class="form__span form__span--email"></span>
+                  <input type="text" class="form__input" name="email" placeholder="Enter your Email" required>
+                </label>
+                <label>
+                  <span class="form__span form__span--password"></span>
+                  <input type="tel" class="form__input" name="password" placeholder="Enter your Phone number" required>
+                </label>
+                <div class="flex">
+                  <input type="submit" class="form__button form__button--small form__button--success" value="Send">
+                  <input type="submit" class="form__button form__button--small form__button--success disabled" value="Done" disabled>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <h2>Subscribe Form</h2>
+          <div class="frame">
+            <div class="form">
+              <form action="#">
+                <label>
+                  <span class="form__span form__span--email"></span>
+                  <input type="text" class="form__input" name="email" placeholder="Enter your Email" required>
+                </label>
+                <div class="flex">
+                  <input type="submit" class="form__button form__button--small form__button--success" value="Subscribe">
+                  <input type="button" class="form__button form__button--small form__button--fail" value="No, Thanks">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="footer">
+            <img src="../img/logo-bottom.png" class="footer__image" alt="masterlab">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

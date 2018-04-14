@@ -1,1 +1,19 @@
-$font-color: blue
+$bgcolor-form: #f4f4f4
+$form-border: 1px solid #c6c6c6
+$border-success: 1px solid #3b9a00
+$border-fail: 1px solid #a2202a
+
+%form-settings
+  margin-bottom: 20px
+  font-size: .95rem
+  background: $bgcolor-form
+  border: $form-border
+  border-radius: 5px
+  outline: 0
+
+=gradient($color-1, $color-2)
+  background: $color-1
+  background: -moz-linear-gradient(top,  $color-1 0%, $color-2 100%)
+  background: -webkit-linear-gradient(top,  $color-1 0%,$color-2 100%)
+  background: linear-gradient(to bottom,  $color-1 0%, $color-2 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-1', endColorstr='$color-2',GradientType=0 )
